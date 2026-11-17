@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muh. Aidil Ilham | Portfolio 2025</title>
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="Portfolio 2025 of Muh. Aidil Ilham - Software Engineering and Techno Enthusiast.">
+    <meta name="author" content="Muh. Aidil Ilham">
+
+    <!-- Fonts: Syne / Outfit / JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- Modern Minimalist Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 3D Three.js Flowing Liquid Silk Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Top Left Corner Monogram Logo (Direct Reference Match) -->
+    <div class="top-brand" id="brand-home" title="Kembali ke Beranda" tabindex="0" role="button" aria-label="Beranda">
+        <img src="assets/logo-ai.svg" alt="AI Monogram" class="monogram-icon">
+    </div>
+
+    <!-- Top Center Pill Navigation (Visible on Screens 2, 3, 4) -->
+    <nav class="pill-nav" id="pill-nav" aria-label="Navigasi Utama">
+        <button class="pill-btn active" data-target="profil">PROFIL</button>
+        <button class="pill-btn" data-target="project">PROJECT</button>
+        <button class="pill-btn" data-target="contact">CONTACT PERSON</button>
+    </nav>
+
+    <!-- Clean Audio Toggle (Discreet Top Right SVG Icon) -->
+    <button class="sfx-btn" id="sfx-toggle" title="Toggle Suara Haptik" aria-label="Toggle Audio">
+        <span id="sfx-icon-wrap">
+            <svg class="icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+            </svg>
+        </span>
+    </button>
+
+    <!-- Main Viewport Stage (Screen Switching) -->
+    <main class="viewport">
+
+        <!-- ==============================================
+             SCREEN 1: HERO / START MENU (Like Reference)
+             ============================================== -->
+        <section class="screen active" id="screen-hero" data-index="0">
+            <div class="hero-layout">
+                
+                <!-- Left: Crimson Stadium Capsule with Cutout Photo -->
+                <div class="hero-left">
+                    <div class="crimson-stadium">
+                        <img src="assets/profile_cutout.png" alt="Muh. Aidil Ilham" class="stadium-photo">
+                    </div>
+                </div>
+
+                <!-- Right: Massive Title, Tag & Centered Clean Text Menu -->
+                <div class="hero-right">
+                    <div class="title-lockup">
+                        <h1 class="main-title">PORTFOLIO <span class="year-accent">2025</span></h1>
+                        <div class="role-tag">
+                            <span class="tag-square">■</span>
+                            <span class="tag-title">SOFTWARE ENGINEERING AND TECHNO ENTHUSIAST</span>
+                        </div>
+                    </div>
+
+                    <!-- Clean Minimalist Text Menu (Direct Reference Match) -->
+                    <div class="clean-menu">
+                        <button class="menu-link" data-target="profil">START</button>
+                        <button class="menu-link" data-target="project">PROJECTS</button>
+                        <button class="menu-link" data-target="contact">CONTACT</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==============================================
+             SCREEN 2: PROFIL / ABOUT (Like Reference)
+             ============================================== -->
+        <section class="screen" id="screen-profil" data-index="1">
+            <div class="profil-layout">
+                
+                <!-- Left: Free-standing Photo with Cyan Radial Aura -->
+                <div class="profil-left">
+                    <div class="photo-aura-wrap">
+                        <div class="photo-glow-aura"></div>
+                        <img src="assets/profile_cutout.png" alt="Muh. Aidil Ilham" class="person-photo">
+                    </div>
+                    <div class="person-caption">
+                        <span class="greeting-text">HELLO, I AM</span>
+                        <h2 class="person-name">MUH. AIDIL ILHAM</h2>
+                    </div>
+                </div>
+
+                <!-- Right: Clean Typography & 2-Column Specs -->
+                <div class="profil-right">
+                    
+                    <!-- About Me Narrative -->
+                    <div class="info-block">
+                        <h3 class="block-title">ABOUT ME</h3>
+                        <p class="about-text">
+                            Lahir di Mamuju, 21 Januari 2005. Mahasiswa Sarjana Terapan (D4) Teknologi Rekayasa Perangkat Lunak di Politeknik Kelapa Sawit Citra Widya Edukasi sebagai penerima Beasiswa Penuh BPDPKS. Aktif merancang instrumen IoT perkebunan, sistem Enterprise Resource Planning (ERP), dan WebGIS. Berpengalaman sebagai Co-Founder & Project Manager di cgreen (student software house), mantan Ketua Hima TRPL (utusan pendaftaran PERMIKOMNAS), dan Ketua UKM Bengkel Seni.
+                        </p>
+                    </div>
+
+                    <!-- Software & Hardware Skills Icons Row (Authored SVG Vector Icons) -->
+                    <div class="info-block">
+                        <h3 class="block-title">SOFTWARE SKILLS</h3>
+                        <div class="skills-icon-row">
+                            <div class="skill-tile" title="Python">
+                                <span class="tile-icon">
+                                    <img src="assets/software/python.webp" alt="Python" class="tile-img" loading="lazy">
+                                </span>
+                                <span class="tile-label">Python</span>
+                            </div>
+
+                            <div class="skill-tile" title="React">
+                                <span class="tile-icon">
+                                    <img src="assets/software/react.webp" alt="React" class="tile-img" loading="lazy">
+                                </span>
+                                <span class="tile-label">React</span>
+                            </div>
+
+                            <div class="skill-tile" title="JavaScript">
+                                <span class="tile-icon">
+                                    <img src="assets/software/javascript.png" alt="JavaScript" class="tile-img tile-img-badge" loading="lazy">
+                                </span>
+                                <span class="tile-label">JS</span>
+                            </div>
+
+                            <div class="skill-tile" title="Node.js">
+                                <span class="tile-icon">
+                                    <img src="assets/software/node.png" alt="Node.js" class="tile-img" loading="lazy">
+                                </span>
+                                <span class="tile-label">Node</span>
+                            </div>
+
+                            <div class="skill-tile" title="ESP32 (IoT)">
+                                <span class="tile-icon">
+                                    <img src="assets/software/esp32.jpg" alt="ESP32" class="tile-img tile-img-badge" loading="lazy">
+                                </span>
+                                <span class="tile-label">ESP32</span>
+                            </div>
+
+                            <div class="skill-tile" title="QGIS (WebGIS)">
+                                <span class="tile-icon">
+                                    <img src="assets/software/qgis.png" alt="QGIS" class="tile-img" loading="lazy">
+                                </span>
+                                <span class="tile-label">QGIS</span>
+                            </div>
+
+                            <div class="skill-tile" title="Openbravo ERP">
+                                <span class="tile-icon">
+                                    <img src="assets/software/openbravo.png" alt="Openbravo" class="tile-img" loading="lazy">
+                                </span>
+                                <span class="tile-label">Openbravo</span>
+                            </div>
+
+                            <div class="skill-tile" title="mySAP365 ERP">
+                                <span class="tile-icon">
+                                    <img src="assets/software/mysap365.png" alt="mySAP365" class="tile-img" loading="lazy">
+                                </span>
+                                <span class="tile-label">mySAP365</span>
+                            </div>
+
+                            <div class="skill-tile" title="Figma UI/UX">
+                                <span class="tile-icon">
+                                    <img src="assets/software/figma.webp" alt="Figma" class="tile-img" loading="lazy">
+                                </span>
+                                <span class="tile-label">Figma</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Two Minimal Sub-Columns: Education & Experience -->
+                    <div class="specs-columns">
+                        
+                        <!-- Education -->
+                        <div class="spec-col">
+                            <h4 class="col-title">EDUCATION</h4>
+                            <div class="spec-list">
+                                <div class="spec-item">
+                                    <span class="spec-bullet">●</span>
+                                    <div class="spec-text">
+                                        <span class="spec-period">2023 - SEKARANG</span>
+                                        <strong>Politeknik CWE</strong>
+                                        <p>D4 Teknologi Rekayasa Perangkat Lunak (Beasiswa BPDPKS)</p>
+                                    </div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-bullet">●</span>
+                                    <div class="spec-text">
+                                        <span class="spec-period">2020 - 2023</span>
+                                        <strong>SMKN 2 Baras</strong>
+                                        <p>Teknik Komputer dan Jaringan (TKJ)</p>
+                                    </div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-bullet">●</span>
+                                    <div class="spec-text">
+                                        <span class="spec-period">2017 - 2020</span>
+                                        <strong>SMPN 13 Palu</strong>
+                                    </div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-bullet">●</span>
+                                    <div class="spec-text">
+                                        <span class="spec-period">2012 - 2017</span>
+                                        <strong>SDN 018 Bulili</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4 class="col-title mt-lang">LANGUAGE (COMMUNICATION)</h4>
+                            <div class="lang-row">
+                                <span class="lang-name">INDONESIA</span>
+                                <span class="lang-val">100%</span>
+                            </div>
+                            <div class="lang-row">
+                                <span class="lang-name">ENGLISH</span>
+                                <span class="lang-val">75%</span>
+                            </div>
+                        </div>
+
+                        <!-- Experience -->
+                        <div class="spec-col">
+                            <h4 class="col-title">EXPERIENCE</h4>
+                            <div class="spec-list">
+                                <div class="spec-item">
+                                    <span class="spec-bullet">●</span>
+                                    <div class="spec-text">
+                                        <strong>Co-Founder & Project Manager</strong>
+                                        <span class="spec-period">cgreen (Student Software House)</span>
+                                        <p>Memimpin pengembangan sistem MillTrack untuk tracking operator PKS.</p>
+                                    </div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-bullet">●</span>
+                                    <div class="spec-text">
+                                        <strong>Kuliah Kerja Profesi (KKP)</strong>
+                                        <span class="spec-period">PT Kayan Plantation (5 Bulan - 2025)</span>
+                                        <p>Operasional pabrik kelapa sawit & instrumen digital.</p>
+                                    </div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-bullet">●</span>
+                                    <div class="spec-text">
+                                        <strong>Magang Operasional (Semester 4)</strong>
+                                        <span class="spec-period">PT Unggul Widya Teknologi Lestari</span>
+                                    </div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-bullet">●</span>
+                                    <div class="spec-text">
+                                        <strong>Ketua Himpunan Mahasiswa TRPL</strong>
+                                        <span class="spec-period">2024 - 2025: Delegasi Pendaftaran PERMIKOMNAS</span>
+                                    </div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-bullet">●</span>
+                                    <div class="spec-text">
+                                        <strong>Ketua UKM Bengkel Seni</strong>
+                                        <span class="spec-period">2025 - Sekarang</span>
+                                    </div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-bullet">●</span>
+                                    <div class="spec-text">
+                                        <strong>Mentor TI Ekspedisi CWE (BEM)</strong>
+                                        <p>Inovasi IoT bio-energy limbah padi untuk penerangan kandang ternak.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==============================================
+             SCREEN 3: RECAP PROJECT (Like Reference Bento)
+             ============================================== -->
+        <section class="screen" id="screen-project" data-index="2">
+            <div class="project-layout">
+                
+                <div class="recap-header">
+                    <h2 class="recap-title">RECAP PROJECT 2025 <span class="recap-tag">APPLIED TECH</span></h2>
+                </div>
+
+                <!-- Clean Visual Bento Showcase (Direct Reference Match) -->
+                <div class="bento-gallery">
+                    
+                    <!-- Item 1: MillTrack (With Real Preview) -->
+                    <div class="bento-card bento-span-2" data-project-id="milltrack" tabindex="0" role="button" aria-label="Buka MillTrack Case Study">
+                        <div class="card-media">
+                            <img src="assets/projects/milltrack_preview.jpg" alt="MillTrack" class="bento-img">
+                        </div>
+                        <div class="bento-overlay">
+                            <img src="assets/projects/milltrack.png" alt="MillTrack Logo" class="bento-logo">
+                            <div class="bento-info">
+                                <h4>MillTrack</h4>
+                                <p>Sistem Tracking Operator PKS: cgreen</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: GeoGiSa (With Real Mobile GIS Preview) -->
+                    <div class="bento-card" data-project-id="geogisa" tabindex="0" role="button" aria-label="Buka GeoGiSa Case Study">
+                        <div class="card-media">
+                            <img src="assets/projects/geogisa_app_preview.jpg" alt="GeoGiSa" class="bento-img">
+                        </div>
+                        <div class="bento-overlay">
+                            <img src="assets/projects/geogisa.png" alt="GeoGiSa Logo" class="bento-logo">
+                            <div class="bento-info">
+                                <h4>GeoGiSa</h4>
+                                <p>IoT & Mobile GIS Nutrisi Tanah Sawit</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: MyStation365 (With Real Preview) -->
+                    <div class="bento-card" data-project-id="mystation365" tabindex="0" role="button" aria-label="Buka MyStation365 Case Study">
+                        <div class="card-media">
+                            <img src="assets/projects/mystation365_preview.jpg" alt="MyStation365" class="bento-img">
+                        </div>
+                        <div class="bento-overlay">
+                            <img src="assets/projects/mystation365.png" alt="MyStation365 Logo" class="bento-logo">
+                            <div class="bento-info">
+                                <h4>MyStation365</h4>
+                                <p>PKS Stasiun terhubung MySAP365</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: eLib Platform (With Real Preview) -->
+                    <div class="bento-card bento-span-2" data-project-id="elib" tabindex="0" role="button" aria-label="Buka eLib Case Study">
+                        <div class="card-media">
+                            <img src="assets/projects/elib_preview.jpg" alt="eLib" class="bento-img">
+                        </div>
+                        <div class="bento-overlay">
+                            <img src="assets/projects/elib.png" alt="eLib Logo" class="bento-logo">
+                            <div class="bento-info">
+                                <h4>eLib Platform</h4>
+                                <p>Perpustakaan Digital & Kuis Training LMS</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5: Sterilizer Hub -->
+                    <div class="bento-card" data-project-id="sterilizerhub" tabindex="0" role="button" aria-label="Buka Sterilizer Hub Case Study">
+                        <div class="card-media graphic-cover sterilizer-cover">
+                            <img src="assets/projects/sterilizerhub.png" alt="Sterilizer Hub Logo" class="center-brand-logo">
+                        </div>
+                        <div class="bento-overlay">
+                            <div class="bento-info">
+                                <h4>Sterilizer Hub</h4>
+                                <p>IoT Kontrol Stasiun Perebusan PKS</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 6: KoskuMaps -->
+                    <div class="bento-card" data-project-id="koskumaps" tabindex="0" role="button" aria-label="Buka KoskuMaps Case Study">
+                        <div class="card-media graphic-cover kosku-cover">
+                            <img src="assets/projects/koskumaps.png" alt="KoskuMaps Logo" class="center-brand-logo">
+                        </div>
+                        <div class="bento-overlay">
+                            <div class="bento-info">
+                                <h4>KoskuMaps</h4>
+                                <p>WebGIS Hunian Mahasiswa</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 7: MySAP365 -->
+                    <div class="bento-card" data-project-id="mysap365" tabindex="0" role="button" aria-label="Buka MySAP365 Case Study">
+                        <div class="card-media graphic-cover sap-cover">
+                            <img src="assets/projects/mysap365.png" alt="MySAP365 Logo" class="center-brand-logo">
+                        </div>
+                        <div class="bento-overlay">
+                            <div class="bento-info">
+                                <h4>MySAP365</h4>
+                                <p>Enterprise Resource Planning Kelapa Sawit</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 8: Amourtic ERP -->
+                    <div class="bento-card" data-project-id="amourtic" tabindex="0" role="button" aria-label="Buka Amourtic ERP Case Study">
+                        <div class="card-media graphic-cover openbravo-cover">
+                            <span class="cover-code">ERP OPENBRAVO</span>
+                        </div>
+                        <div class="bento-overlay">
+                            <div class="bento-info">
+                                <h4>Amourtic ERP</h4>
+                                <p>Simulasi Openbravo Manufaktur Kosmetik</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 9: Bio-Energy IoT CWE -->
+                    <div class="bento-card" data-project-id="bioenergy" tabindex="0" role="button" aria-label="Buka Bio-Energy Case Study">
+                        <div class="card-media graphic-cover bio-cover">
+                            <span class="cover-code">BEM CWE IOT</span>
+                        </div>
+                        <div class="bento-overlay">
+                            <div class="bento-info">
+                                <h4>Bio-Energy IoT</h4>
+                                <p>Limbah Padi untuk Listrik Kandang Ternak</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==============================================
+             SCREEN 4: CONTACT PERSON & OUTRO (Like Reference)
+             ============================================== -->
+        <section class="screen" id="screen-contact" data-index="3">
+            <div class="contact-layout">
+                
+                <!-- Left: Circular Photo & Clean Minimalist SVG Social List -->
+                <div class="contact-left">
+                    <h3 class="contact-subhead">CONTACT ME</h3>
+                    
+                    <div class="avatar-holder">
+                        <img src="assets/profile_cutout.png" alt="Muh. Aidil Ilham" class="round-avatar">
+                    </div>
+                    <span class="avatar-name">MUH. AIDIL ILHAM</span>
+                    <span class="avatar-num">21</span>
+
+                    <!-- Minimal Clean Authored SVG Social Links -->
+                    <div class="social-minimal-list">
+                        <a href="https://www.instagram.com/aidilhammm/" target="_blank" rel="noopener" class="social-item">
+                            <span class="s-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </span>
+                            <span class="s-handle">@aidilhammm</span>
+                        </a>
+
+                        <a href="https://github.com/aidilham21" target="_blank" rel="noopener" class="social-item">
+                            <span class="s-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </span>
+                            <span class="s-handle">aidilham21</span>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/muh-aidil-ilham-5027aa298/" target="_blank" rel="noopener" class="social-item">
+                            <span class="s-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </span>
+                            <span class="s-handle">Muh. Aidil Ilham</span>
+                        </a>
+
+                        <a href="https://wa.me/6282271453323" target="_blank" rel="noopener" class="social-item">
+                            <span class="s-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                                </svg>
+                            </span>
+                            <span class="s-handle">+62 822-7145-3323</span>
+                        </a>
+
+                        <a href="mailto:aidililhaada@gmail.com" class="social-item">
+                            <span class="s-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </span>
+                            <span class="s-handle">aidililhaada@gmail.com</span>
+                        </a>
+                    </div>
+
+                    <!-- Clean ATS Document Link -->
+                    <a href="cvdil.html" class="minimal-doc-link">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px;">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                        </svg>
+                        Buka Dokumen CV Resmi (Print/ATS)
+                    </a>
+                </div>
+
+                <!-- Right: Massive Thank You Typography & Past Portfolios -->
+                <div class="contact-right">
+                    <div class="thankyou-block">
+                        <h2 class="ty-big">THANK YOU</h2>
+                        <span class="ty-year">2025</span>
+                    </div>
+
+                    <!-- Past Archive Mini Reel (Like Reference) -->
+                    <div class="portfolio-archive-row">
+                        <div class="arch-card">
+                            <span class="arch-tag">PORTOFOLIO</span>
+                            <span class="arch-val">2022 / 2023</span>
+                            <p>SMKN 2 Baras: TKJ</p>
+                        </div>
+                        <div class="arch-card">
+                            <span class="arch-tag">MILESTONE</span>
+                            <span class="arch-val">2024</span>
+                            <p>cgreen: Hima TRPL</p>
+                        </div>
+                        <div class="arch-card active-arch">
+                            <span class="arch-tag">PORTOFOLIO</span>
+                            <span class="arch-val">2025</span>
+                            <p>KKP PT Kayan: IoT</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Case Study Interactive Modal -->
+    <div class="modal-backdrop" id="project-modal" aria-hidden="true">
+        <div class="modal-box">
+            <button class="modal-x" id="modal-close" aria-label="Tutup Detail">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div id="modal-dynamic-content">
+                <!-- Dynamically populated via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- Main Logic -->
+    <script src="main.js"></script>
+</body>
+</html>

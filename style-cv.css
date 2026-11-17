@@ -1,0 +1,274 @@
+/* ==========================================================================
+   CLEAN ATS-FRIENDLY & PRINT-READY STYLING FOR CVDIL.HTML
+   ========================================================================== */
+
+:root {
+    --text-primary: #1e293b;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
+    --border-color: #cbd5e1;
+    --accent-blue: #0284c7;
+    --accent-dark: #0f172a;
+    --bg-page: #f8fafc;
+    --bg-card: #ffffff;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 2rem 1rem;
+}
+
+/* Floating Navigation Bar (Screen Only) */
+.print-nav-bar {
+    max-width: 900px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-portfolio-btn {
+    text-decoration: none;
+    color: var(--accent-blue);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    background: #e0f2fe;
+    transition: background 0.2s ease;
+}
+
+.back-portfolio-btn:hover {
+    background: #bae6fd;
+}
+
+.print-btn {
+    background: var(--accent-dark);
+    color: #ffffff;
+    border: none;
+    padding: 0.55rem 1.25rem;
+    border-radius: 6px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.print-btn:hover {
+    opacity: 0.9;
+}
+
+/* Document Container */
+.cv-document-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 3rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+.cv-header {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.header-photo-wrapper {
+    flex-shrink: 0;
+}
+
+.cv-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent-blue);
+}
+
+.cv-name {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--accent-dark);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.25rem;
+}
+
+.cv-title-tag {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent-blue);
+    margin-bottom: 0.75rem;
+}
+
+.cv-contact-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.cv-contact-strip a {
+    color: var(--accent-blue);
+    text-decoration: none;
+}
+
+.cv-contact-strip a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+.cv-section {
+    margin-bottom: 2.25rem;
+}
+
+.section-title {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--accent-dark);
+    border-bottom: 1.5px solid var(--border-color);
+    padding-bottom: 0.35rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.section-text {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* Timeline */
+.cv-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.cv-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.item-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.item-role {
+    font-weight: 700;
+    color: var(--accent-dark);
+    font-size: 1rem;
+}
+
+.item-date {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.item-company {
+    font-weight: 600;
+    color: var(--accent-blue);
+    font-size: 0.9rem;
+}
+
+.item-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-top: 0.25rem;
+}
+
+/* Projects Grid */
+.cv-project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.cv-proj-card {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1rem;
+    background: #f8fafc;
+}
+
+.cv-proj-card h4 {
+    font-size: 0.95rem;
+    color: var(--accent-dark);
+    font-weight: 700;
+}
+
+.proj-meta {
+    font-size: 0.75rem;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--accent-blue);
+    margin-bottom: 0.35rem;
+}
+
+.cv-proj-card p:last-child {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* Skills Grid */
+.cv-skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+}
+
+.skill-col strong {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--accent-dark);
+    margin-bottom: 0.25rem;
+}
+
+.skill-col p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: #ffffff;
+        padding: 0;
+    }
+    .no-print {
+        display: none !important;
+    }
+    .cv-document-container {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+    }
+    .cv-section {
+        page-break-inside: avoid;
+    }
+}
