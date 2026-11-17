@@ -78,15 +78,66 @@ if %errorlevel% equ 0 (
     echo ===================================================
     echo   [SUKSES] Perubahan berhasil di-push ke GitHub!
     echo ===================================================
+    goto END
+)
+
+:: Penanganan jika Push ditolak oleh GitHub (misal karena remote memiliki commit awal)
+echo.
+echo ===================================================
+echo   [PERINGATAN] Push ditolak oleh GitHub (fetch first)!
+echo   Penyebab: Repositori di GitHub sudah memiliki commit
+echo   awal (misal saat buat repo mencentang "Add a README").
+echo ===================================================
+echo.
+echo   Pilih solusi penanganan:
+echo   [1] FORCE PUSH (Timpa repositori GitHub dengan portofolio lokal)
+echo       * Sangat disarankan jika repo GitHub baru dibuat dan
+echo         isinya hanya file template / placeholder awal.
+echo.
+echo   [2] PULL ^& MERGE (Tarik commit remote dan gabungkan ke lokal)
+echo       * Gunakan ini jika di GitHub terdapat file/riwayat yang
+echo         tidak boleh hilang.
+echo.
+echo   [3] Batalkan operasi
+echo.
+set /p "CHOICE=Pilihan Anda [1/2/3]: "
+
+if "!CHOICE!"=="1" (
+    echo.
+    echo Menjalankan Force Push ke origin %CURRENT_BRANCH%...
+    git push -u origin %CURRENT_BRANCH% --force
+    if !errorlevel! equ 0 (
+        echo.
+        echo ===================================================
+        echo   [SUKSES] Portofolio lokal berhasil di-push ke GitHub!
+        echo ===================================================
+    ) else (
+        echo.
+        echo [GAGAL] Force push gagal. Pastikan login GitHub Anda memiliki hak akses write.
+    )
+) else if "!CHOICE!"=="2" (
+    echo.
+    echo Menarik commit dari remote dengan --allow-unrelated-histories...
+    git pull origin %CURRENT_BRANCH% --allow-unrelated-histories --no-rebase
+    if !errorlevel! equ 0 (
+        echo.
+        echo Penggabungan berhasil. Melakukan push ulang...
+        git push -u origin %CURRENT_BRANCH%
+        if !errorlevel! equ 0 (
+            echo.
+            echo ===================================================
+            echo   [SUKSES] Perubahan berhasil di-push ke GitHub!
+            echo ===================================================
+        )
+    ) else (
+        echo.
+        echo [CATATAN] Terjadi konflik saat penggabungan file.
+        echo Silakan buka file yang berkonflik (misal README.md), simpan,
+        echo lalu jalankan push.bat kembali.
+    )
 ) else (
     echo.
-    echo ===================================================
-    echo   [CATATAN] Push ke remote gagal atau butuh otentikasi.
-    echo   1. Pastikan Anda sudah login GitHub di browser / Credential Manager.
-    echo   2. Jika repo di GitHub sudah memiliki commit awal,
-    echo      jalankan pull.bat atau:
-    echo      git pull origin %CURRENT_BRANCH% --allow-unrelated-histories
-    echo ===================================================
+    echo Operasi push dibatalkan.
 )
 
 :END

@@ -44,7 +44,7 @@ if "%CURRENT_BRANCH%"=="master" (
 echo [STATUS] Branch aktif: %CURRENT_BRANCH%
 echo.
 echo [1/1] Menarik perubahan terbaru dari origin %CURRENT_BRANCH%...
-git pull origin %CURRENT_BRANCH%
+git pull origin %CURRENT_BRANCH% --allow-unrelated-histories --no-rebase
 
 if %errorlevel% equ 0 (
     echo.
@@ -56,8 +56,8 @@ if %errorlevel% equ 0 (
     echo ===================================================
     echo   [PERINGATAN] Pull gagal atau terdapat konflik.
     echo   1. Pastikan koneksi internet aktif.
-    echo   2. Jika ada conflict file lokal, selesaikan atau stash:
-    echo      git stash ^&^& git pull ^&^& git stash pop
+    echo   2. Jika terjadi konflik file (conflict), buka file tersebut,
+    echo      selesaikan perbedaan, lalu jalankan push.bat.
     echo ===================================================
 )
 
