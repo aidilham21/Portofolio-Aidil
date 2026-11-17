@@ -1,11 +1,14 @@
 # Muh. Aidil Ilham - Interactive Engineering Portfolio
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-aidilham21.github.io%2FPortofolio--Aidil-success?logo=github-pages&logoColor=white)](https://aidilham21.github.io/Portofolio-Aidil/)
 [![Vanilla JS](https://img.shields.io/badge/Stack-Vanilla_JS-F7DF1E?logo=javascript&logoColor=black)](main.js)
 [![WebGL Three.js](https://img.shields.io/badge/WebGL-Three.js_r128-black?logo=three.js)](https://threejs.org/)
 [![Web Audio API](https://img.shields.io/badge/Audio-Web_Audio_API-orange)](main.js)
 [![CSS3 Modern](https://img.shields.io/badge/Design-Custom_CSS3-1572B6?logo=css3)](style.css)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-aidilham21%2FPortofolio--Aidil-181717?logo=github)](https://github.com/aidilham21/Portofolio-Aidil)
+
+> 🌐 **Live Website**: [https://aidilham21.github.io/Portofolio-Aidil/](https://aidilham21.github.io/Portofolio-Aidil/)
 
 Portofolio web interaktif dan kurasi rekayasa perangkat lunak oleh **Muh. Aidil Ilham** (Software Engineering, IoT Perkebunan, WebGIS, dan Enterprise Resource Planning).
 
