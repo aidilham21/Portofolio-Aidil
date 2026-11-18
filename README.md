@@ -57,7 +57,7 @@ Arsitektur aplikasi mengutamakan performa, kesederhanaan, dan kebersihan kode (*
 * **Top Pill Navigation & Brand Monogram**: Akses cepat ke setiap bagian antarmuka dengan indikator visual aktif.
 * **Project Bento Grid Showcase**: Galeri bento asimetris dengan kartu interaktif dan dialog modal detail proyek.
 * **Responsive Layout (Mobile to Ultra-Wide)**: Menggunakan CSS Clamp, Flexbox, dan CSS Grid dengan target sentuh minimum 44px untuk kenyamanan perangkat mobile.
-* **Halaman Servis Terintegrasi (`sihijau.html`)**: Landing page untuk layanan jasa servis perangkat digital dan konsultasi hardware/software.
+* **Curriculum Vitae Terintegrasi (`cvdil.html`)**: Halaman profil dan CV mandiri yang dilengkapi modul CSS media cetak untuk menghasilkan PDF siap pakai berstandar ATS.
 
 ---
 
@@ -73,7 +73,6 @@ Berikut adalah proyek rekayasa riil yang ditampilkan dalam portofolio ini:
 | **eLib Platform** | Web App & LMS | Platform perpustakaan digital dan sistem ujian/kuis pelatihan internal terintegrasi. |
 | **Sterilizer Hub** | Embedded & IoT | Unit kontrol dan pemantau stasiun perebusan buah sawit (sterilizer) berbasis mikrokontroler. |
 | **KoskuMaps** | WebGIS | Peta interaktif pencarian dan verifikasi kos mahasiswa di sekitar kawasan kampus. |
-| **SiHijau** | Service Platform | Portal jasa servis perangkat digital, instalasi software, dan konsultasi TI lokal. |
 
 ---
 
@@ -89,10 +88,6 @@ Portofolio/
 ├── main.js                  # Engine Three.js, Web Audio synthesizer, dan state router
 ├── cvdil.html               # CV interaktif dan print-ready format PDF
 ├── style-cv.css             # Style khusus cetak dan layout dokumen CV
-├── script-cv.js             # Logika interaktif halaman CV
-├── sihijau.html             # Landing page layanan servis digital SiHijau
-├── style-sihijau.css        # Style landing page SiHijau
-├── script-sihijau.js        # Logika antarmuka SiHijau
 ├── push.bat                 # Shortcut Windows untuk git add, commit, dan push
 ├── pull.bat                 # Shortcut Windows untuk git pull dari origin main
 ├── anti-slop/               # Catatan audit kepatuhan desain & verifikasi data
